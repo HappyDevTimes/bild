@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: lightgray;
+}
+
+.search-box {
+    position: relative;
+    top: -250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+
+.search-box:hover>.search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-btn {
+    color: rgb(161, 154, 161);
+    float: right;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(105, 156, 108);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 100px;
+    }
+    50% {
+        width: 200px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+.top-content {
+    background-color: rgb(111, 124, 103);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px;
+}
+
+h3 {
+    height: 100%;
+    background-color: rgb(121, 143, 128);
+    line-height: 60px;
+    padding: 0 50px;
+    color: rgb(58, 104, 68);
+}
+
+.photo-gallery {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+#imagegrid {
+    width: 400px;
+    height: 350px;
+    background-color: rgb(51, 51, 51);
+    margin: 10px;
+}
+
+#imagegrid img {
+    width: 400px;
+    height: 305px;
+}
+
+#image-container {
+    display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-controls {
+    margin-top: 20px;
+}
