@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoGallery</title> 
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+			integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Photo Gallery </h1>
+        <div class="top content">
+            <h3>Find a photo from our gallery</h3>
+        </div>
+        
+        <div id="search-controls">
+            <input type="text" id="searchfield">
+            <select id="colors">
+                <option value="">Any color</option>
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Green">Green</option>
+                <option value="Turquoise">Turquoise</option>
+                <option value="Blue">Blue</option>
+                <option value="Lilac">Lilac</option>
+                <option value="Pink">Pink</option>
+                <option value="White">White</option>
+                <option value="Gray">Gray</option>
+                <option value="Black">Black</option>
+                <option value="Brown">Brown</option>
+              </select>
+              <button id="sokbutton">Sök</button>
+        </div>
+
+        <div id="image-container">
+            
+        </div>
+
+     <div>
+        <button id="previousButton">Previous</button>
+        <button id="nextButton">Next</button>
+     </div>
+
+    </div>
+
+    
+
+</body>
+<script src="scripts/PixaBay.js"></script>
+</html>
